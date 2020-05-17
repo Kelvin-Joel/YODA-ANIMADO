@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!-----<i class="fas fa-power-off"></i>------->
+    <div class="boton">
+        <span id="boton"><i class="fas fa-power-off"></i></span>
+    </div>
+    <div class="container">
+        <div class="cont-hijo">
+            <img class="yoda" src="yoda-removebg-preview.png" alt="">
+            <div class="rocas-cont">
+                <img id="roca1" src="roca1-removebg-preview.png" alt="">
+                <img id="roca2" src="roca2-removebg-preview.png" alt="">
+                <img id="roca3" src="roca4-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="sombra"></div>
+    </div>
+
+    <script>
+
+        let roca1=document.getElementById('roca1'),
+        roca2=document.getElementById('roca2'),
+        roca3=document.getElementById('roca3'),
+        boton=document.getElementById('boton')
+
+        boton.addEventListener('click',()=>{
+            roca1.classList.toggle('clase1')
+            roca2.classList.toggle('clase1')
+            roca3.classList.toggle('clase1')
+            boton.classList.toggle('clase2')
+        })
+    </script>
+
+</body>
+</html>
